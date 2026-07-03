@@ -1,0 +1,534 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#eef2f7;
+}
+
+.app{
+    display:flex;
+    height:100vh;
+}
+
+.sidebar{
+    width:250px;
+    background:#0b3d91;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    padding:20px;
+}
+
+.sidebar h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.sidebar a{
+    text-decoration:none;
+    color:white;
+    padding:14px;
+    margin-bottom:10px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.sidebar a:hover{
+    background:#1565c0;
+}
+
+.main{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+.navbar{
+    height:70px;
+    background:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 25px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.content{
+    padding:25px;
+    overflow:auto;
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+    margin-bottom:30px;
+    flex-wrap:wrap;
+}
+
+.card1{
+    background:white;
+    width:250px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card1:hover{
+    transform:translateY(-6px);
+}
+
+.card1 h3{
+    color:#555;
+    margin-bottom:10px;
+}
+
+.card1 h1{
+    color:#0b3d91;
+}
+
+.table{
+    background:white;
+    border-radius:10px;
+}
+
+input{
+    margin-top:20px;
+}
+
+.table{
+
+border-radius:10px;
+
+overflow:hidden;
+
+}
+
+.form-control{
+
+max-width:500px;
+
+}
+
+.badge{
+
+font-size:14px;
+
+padding:8px 12px;
+
+}
+
+.charts{
+
+display:flex;
+
+gap:30px;
+
+margin-top:30px;
+
+flex-wrap:wrap;
+
+}
+
+.chartBox{
+
+background:white;
+
+padding:20px;
+
+border-radius:15px;
+
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+
+width:500px;
+
+}
+
+.drugContainer{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+
+gap:20px;
+
+}
+
+.drugCard{
+
+background:white;
+
+padding:20px;
+
+border-radius:15px;
+
+box-shadow:0 4px 12px rgba(0,0,0,.15);
+
+transition:.3s;
+
+}
+
+.drugCard:hover{
+
+transform:translateY(-8px);
+
+}
+
+.drugCard h3{
+
+color:#0b3d91;
+
+margin-bottom:15px;
+
+}
+
+.drugCard p{
+
+margin-bottom:10px;
+
+}
+.loginPage{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:#0b3d91;
+
+}
+
+.loginCard{
+
+width:380px;
+
+background:white;
+
+padding:35px;
+
+border-radius:15px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+}
+
+.loginCard h2{
+
+text-align:center;
+
+margin-bottom:25px;
+
+color:#0b3d91;
+
+}
+
+.loginPage{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:linear-gradient(135deg,#0b3d91,#1976d2,#42a5f5);
+
+}
+
+.loginCard{
+width:400px;
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.loginCard h2{
+text-align:center;
+margin-bottom:25px;
+color:#0b3d91;
+font-weight:bold;
+}
+
+.loginCard button{
+margin-top:10px;
+}
+
+.navRight{
+
+display:flex;
+
+align-items:center;
+
+gap:20px;
+
+}
+
+.profile{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+}
+
+.profile img{
+
+width:40px;
+
+height:40px;
+
+border-radius:50%;
+
+border:2px solid #1565c0;
+
+}
+
+.card1{
+
+animation:fade .5s ease;
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.form-control{
+
+transition:.3s;
+
+}
+
+.form-control:focus{
+
+box-shadow:0 0 12px rgba(13,110,253,.4);
+
+}
+
+.btn{
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+transform:scale(1.05);
+
+}
+
+.settingCard{
+
+background:white;
+
+padding:20px;
+
+margin-bottom:20px;
+
+border-radius:12px;
+
+box-shadow:0 4px 12px rgba(0,0,0,.1);
+
+}
+
+.helpCard{
+
+background:white;
+
+padding:25px;
+
+border-radius:12px;
+
+box-shadow:0 4px 12px rgba(0,0,0,.1);
+
+}
+
+.footer{
+
+margin-top:30px;
+
+padding:20px;
+
+text-align:center;
+
+background:white;
+
+font-weight:bold;
+
+border-radius:10px;
+
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+
+}
+
+.banner{
+
+background:white;
+
+padding:25px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+border-radius:15px;
+
+margin-bottom:25px;
+
+box-shadow:0 5px 12px rgba(0,0,0,.12);
+
+}
+
+.banner img{
+
+height:150px;
+
+}
+
+.activitySection{
+
+display:flex;
+
+gap:25px;
+
+margin-top:30px;
+
+flex-wrap:wrap;
+
+}
+
+.activityCard{
+
+background:white;
+
+padding:20px;
+
+border-radius:15px;
+
+flex:1;
+
+min-width:350px;
+
+box-shadow:0 5px 12px rgba(0,0,0,.12);
+
+}
+
+.activityCard ul{
+
+padding-left:20px;
+
+}
+
+.activityCard li{
+
+margin-bottom:15px;
+
+font-size:16px;
+
+}
+
+.notifyCard{
+
+background:white;
+
+padding:20px;
+
+margin-bottom:20px;
+
+border-radius:12px;
+
+box-shadow:0 4px 12px rgba(0,0,0,.12);
+
+transition:.3s;
+
+}
+
+.notifyCard:hover{
+
+transform:translateY(-5px);
+
+}
+
+.architecture{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+margin-bottom:30px;
+
+}
+
+.module{
+
+background:#0d6efd;
+
+color:white;
+
+padding:18px;
+
+border-radius:12px;
+
+width:250px;
+
+text-align:center;
+
+font-weight:bold;
+
+margin:10px;
+
+}
+
+.moduleRow{
+
+display:flex;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.arrow{
+
+font-size:30px;
+
+font-weight:bold;
+
+color:#0d6efd;
+
+}
+

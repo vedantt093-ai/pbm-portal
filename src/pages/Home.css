@@ -1,0 +1,334 @@
+/* ---------- Google Font ---------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f8fc;
+}
+
+/* ---------- Navbar ---------- */
+
+.homeNavbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 60px;
+
+    background:white;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+
+}
+
+.homeNavbar h2{
+
+    color:#0d6efd;
+
+}
+
+.homeNavbar div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+}
+
+.homeNavbar a{
+
+    text-decoration:none;
+
+    color:#333;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.homeNavbar a:hover{
+
+    color:#0d6efd;
+
+}
+
+/* ---------- Buttons ---------- */
+
+.loginBtn,
+.startBtn{
+
+    background:#0d6efd;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.loginBtn:hover,
+.startBtn:hover{
+
+    background:#0849b8;
+
+    transform:translateY(-2px);
+
+}
+
+/* ---------- Hero ---------- */
+
+.hero{
+
+    min-height:90vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:60px;
+
+    background:linear-gradient(135deg,#0d6efd,#5dade2);
+
+    color:white;
+
+}
+
+.hero h1{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+    max-width:800px;
+
+    margin:auto;
+
+    margin-bottom:35px;
+
+    line-height:1.8;
+
+}
+
+/* ---------- Statistics ---------- */
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+    padding:60px;
+
+}
+
+.statCard{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.statCard:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.statCard h2{
+
+    color:#0d6efd;
+
+    font-size:40px;
+
+    margin-bottom:10px;
+
+}
+
+/* ---------- Services ---------- */
+
+.services{
+
+    padding:70px;
+
+    background:#eef5ff;
+
+}
+
+.services h2{
+
+    text-align:center;
+
+    margin-bottom:45px;
+
+    font-size:38px;
+
+}
+
+.serviceGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+}
+
+.serviceCard{
+
+    background:white;
+
+    padding:35px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    font-size:50px;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.serviceCard:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.serviceCard h4{
+
+    margin-top:20px;
+
+    margin-bottom:15px;
+
+    font-size:22px;
+
+}
+
+.serviceCard p{
+
+    color:#555;
+
+    line-height:1.6;
+
+}
+
+/* ---------- Footer ---------- */
+
+footer{
+
+    background:#0d6efd;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    font-size:16px;
+
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:900px){
+
+.homeNavbar{
+
+flex-direction:column;
+
+padding:20px;
+
+}
+
+.homeNavbar div{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+margin-top:20px;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero p{
+
+font-size:17px;
+
+}
+
+.stats{
+
+padding:30px;
+
+}
+
+.services{
+
+padding:30px;
+
+}
+
+}
